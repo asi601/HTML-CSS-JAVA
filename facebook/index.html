@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> facebook.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="title-box">
+            <h1> FACEBOOK </h1>
+            <p> Facebook helps you connect and share <br> with the people in your life</p>
+        </div>
+        <div class="form-nox">
+            <form action="#">
+                <input type="text " placeholder="Email  address or Phone number" id="user"> <br><br>
+                <input type="text" placeholder="Password" id="key"> <br> <br>
+                <button type="submit" onclick="login()"> Log In</button> <br> <br>
+                <a href="#"> forgotton password</a> 
+            </form>
+            <hr>
+            <div class="create-btn">
+                <a href="#" style="color: #fff;text-decoration: none; padding: 10px 20px; border-radius: 5px; background: #36a420;font-weight: 600;font-size: 15px;display: inline-block;margin-bottom: 5px;"> Create New Account</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        function login(){
+        var you = document.getElementById('user').value;
+        var p = document.getElementById('key').value;
+
+        if(you === "asim" && p === "asim123"){
+            alert("Welcome, Asim!");
+        } else if(you === "saim" && p === "sde123"){
+            alert("Sorry, Saim! Incorrect password.");
+        } else {
+            alert("Incorrect username or password.");
+        }
+
+    }  
+    </script>
+</body>
+</html>
